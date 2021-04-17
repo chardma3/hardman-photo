@@ -1,13 +1,14 @@
+@import "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100&display=swap";
+
+
 html {
     height: 100%;
 }
 
 body {
-    background: url('/media/bg-pic.jpg') no-repeat center center fixed;
-    background-size: cover;
+    font-family: 'Roboto', sans-serif;
     height: calc(100vh - 164px);
-    color: #555;
-    font-family: 'Lato';
+    
 }
 
 /* from Bulma */
@@ -21,6 +22,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .main-logo-link {
@@ -31,6 +33,7 @@ body {
     background: black;
     color: white;
     min-width: 260px;
+
 }
 
 .btn-black {
