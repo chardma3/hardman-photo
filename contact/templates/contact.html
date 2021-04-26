@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<!--- Header --->
+<div class="container-fluid">
+    <div class="row-products">
+        <div class="col text-center mt-3 mb-3 pb-1">
+            <h2 class="logo-font">Contact Us</h2>
+        </div>
+    </div>
+    <!-- Contact form -->
+    <section id="contact" class="container-fluid form-container">
+        <div class="row">
+            <div class="col-12 form-header" id="contact-button">
+                <h2>Contact</h2>
+                <h4 class="subtext">Get in Touch!</h4>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col">
+                    <form>
+                        <input type="text" class="form-control" id="name" placeholder="Name" required />
+                        <input type="email" class="form-control" id="emailaddress" placeholder="Email" required />
+                        <input type="number" class="form-control" id="phonenumber" placeholder="Phone Number" />
+                        <textarea rows="5" class="form-control" id="message" placeholder="Message" name="message"
+                            required></textarea>
+                        <div class="row text-center">
+                            <div class="col form-button">
+                                <button type="submit" class="btn btn-secondary button-cta">Send!</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.contact form-->
+</div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }
+<script type="text/javascript" src="{% static 'js/email.js' %}"></script>
+{% endblock %}
