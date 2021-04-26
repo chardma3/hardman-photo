@@ -7,15 +7,13 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    height: calc(100vh - 164px); 
+    background: url('/media/androgynous7.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
 }
 
 h2 {
     font-size: 3rem;
-}
-
-.border {
-    border: 5px solid #ff0000;
 }
 
 /* from Bulma */
