@@ -14,17 +14,11 @@
     {% static 'css/base.css' %}
     {% endblock %}
 
-    {% block extra_meta %}
-    {% endblock %}
-
     {% block corecss %}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    {% endblock %}
-
-    {% block extra_css %}
     {% endblock %}
 
     {% block corejs %}
@@ -48,10 +42,7 @@
     </script>
     {% endblock %}
 
-    {% block extra_js %}
-    {% endblock %}
-
-    <title>HARDMAN PHOTO {% block extra_title %}{% endblock %}</title>
+    <title>HARDMAN PHOTO</title>
 </head>
 
 <body>
@@ -130,10 +121,6 @@
                 {% include 'includes/mobile-top-header.html' %}
                 {% include 'includes/main-nav.html' %}
             </nav>
-        </div>
-        <div class="row bg-white pt-lg-2 d-none d-lg-flex">
-            <div class="col text-center">Delivery 3-6 working days</div>
-            <div class="col text-center">Free shipping over 40€ </div>
         </div>
         <div id="delivery-banner" class="row text-center">
             <div class="col bg-black text-white">
