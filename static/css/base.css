@@ -145,7 +145,6 @@ input[name='q']::placeholder {
 }
 
 .form-group {
-    margin: 0 auto;
     max-width: 70%;
 }
 
