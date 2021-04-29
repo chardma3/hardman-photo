@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<!--- Header --->
+<div class="container-fluid">
+    <div class="row-products">
+        <div class="col text-center mt-3 mb-3 pb-1">
+            <h2 class="logo-font">About Hardman Photo</h2>
+        </div>
+    </div>
+    <!--- About image --->
+    <div class="container">
+        <div class="row align-items-center my-4">
+            <div class="col-12 col-md-6">
+                <div class="image-container my-4">
+                    <img src="{{ MEDIA_URL }}about.jpg" alt="about-photo" width="550" height="400" class="about-image">
+                </div>
+            </div>
+            <!--- About text container --->
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="about-details-container mb-5 mt-md-5">
+                    <h2 class="about-heading">Our Story</h2>
+                    <div>
+                        <img src="{{ MEDIA_URL }}seperater.png" alt="no-image" class="nav-center-2">
+                    </div>
+                    <p class="about-text">Hardman Photo is the home of Claire Hardman: Photographer and visual artist.
+                        Claire's background is in TV News and theatre amongst a host of other things. She focuses on the
+                        arts, documentary, portraits and anything that sounds like a challenging and exciting project.
+                        If you are looking for pictures that are one of a kind and breaking the mould then Claire
+                        Hardman is the thing for you. Claire is based in Stockholm and always loves to meet new people
+                        with new and inspiring ideas.
+                        For enquiries, love letters and hate mail just send it through to: contact@hardmanphoto.se
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
