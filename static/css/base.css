@@ -144,7 +144,7 @@ input[name='q']::placeholder {
     text-align: center;
 }
 
-.form-group {
+.contact-form-group {
     max-width: 70%;
 }
 
