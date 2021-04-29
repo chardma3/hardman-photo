@@ -46,7 +46,7 @@
                      </div>
                        <div class="col-12 col-sm-6 order-sm-last">
                            <p class="my-0">Pice Each: ${{ item.product.price }}</p>
-                           <p><strong>Subtotal:</strong>${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                           <p><strong>Subtotal: </strong>${{ item.product.price | calc_subtotal:item.quantity }}</p>
                        </div>
                        <div class="col-12 col-sm-6">
                            {% include "bag/quantity-form.html" %}
@@ -59,6 +59,8 @@
             <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
         </a>	
     </div>
+            </div>
+            <div class="table-responsive rounded d-none d-md-block">
                 <table class="table table-sm table-borderless">
                     <thead class="text-black">
                         <tr>
