@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+
+<div>
+    <h1 class="text-center mt-4">OH NO!</h1>
+    <h2 class="logo-font">Error 403</h2>
+    <p class="text-center mt-1">The page you were looking for doesn't exist</p>
+    <a href="{{ url_for('index' }}" class="link-text">
+        <p class="text-center mt-1">Take me to the homepage</p>
+    </a>
+</div>
+
+{% endblock %}
