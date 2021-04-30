@@ -203,6 +203,18 @@ Web App Sections:
 * Admin account
     * Users with admin rights have access to orders, user profiles, as well as product and blog inventory. The majority of the information is stored in the Django admin site but the admin users may also do common tasks such as adding, editing and deleting products via the site.
 
+## Future Features
+
+### Blog
+
+* I would like to implement a blog as I've read that websites with blogs and frequently updated information rank higher in searches.
+
+### Heart/favorites function
+
+* A feature that allows authenticated users to heart/favorite items so that they can see items those items in favorites section. 
+* Every product in the feed and on product pages would have a heart-shaped icon which would add the product to this favorites section. The list could be accessed on one of the profiles pages, where users can remove the items from the list as well.
+* This feature is to increase the conversion rate and familiarity with the user.
+
 ## Features and Django Apps
 
 HARDMAN PHOTO, [A Django project](https://docs.djangoproject.com/en/3.1/ref/applications/), consists of 7 Django applications listed below. As explained in Django's documentation - a Django application describes a Python package that provides some set of features. Applications may be reused in various projects.
@@ -228,7 +240,7 @@ The following list of features is structured in a way that should help with unde
 
 * Small snippets of messages divided into 4 main categories: `toast_success`, `toast_info`, `toast_warning` and `toast_error`.
 * They appear on every page whenever a certain action has been done by the user.
-* Their purpose is to give feedback on the action a user has just performed, such as logging in, logging out, adding a product to the cart, updating the cart, changing their user info, finishing the checkout process, etc.
+* Their purpose is to give feedback on the action a user has just performed, such as logging in, logging out, adding a product to the bag, updating the bag, changing their user info, finishing the checkout process, etc.
 
 ### Django-allauth feature
 
@@ -263,7 +275,7 @@ The following list of features is structured in a way that should help with unde
 * `bag` Django app is a standard e-commerce functionality which aids the checkout process.
 * A bag icon is always present in the top right corner of the web app. The bag adds a number under the bag icon allowing users to know the current amount of their bag.
 * Users can edit the quantity of items or remove them from bag and view the total amount of the bag. In order to proceed with checkout, the user will be required to register on the site or be logged in. When the user decides to finish shopping, they will need to input their information and credit card details to complete the purchase.
-* If users try to access their empty carts, there will be a message displayed that nothing has been added yet and encourage them to go to the shop.
+* If users try to access their empty bags, there will be a message displayed that nothing has been added yet and encourage them to go to the shop.
 
 ### Checkout app
 
