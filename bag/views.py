@@ -102,3 +102,7 @@ def remove_from_bag(request, item_id):
     except Exception as e:
         messages.error(request, f'Error removing item: {e}')
         return HttpResponse(status=500)
+
+
+def page_not_found_view(request, exception):
+    return render(request, '404.html', status=404)
