@@ -1,11 +1,12 @@
 {% extends "base.html" %}
 {% load static %}
+{% block content %}
 
 <div>
     <h1 class="text-center mt-4">OH NO!</h1>
     <h2 class="logo-font">Error 500</h2>
     <p class="text-center mt-1">There was an internal server error and the page couldn't be displayed!</p>
-    <a href="{{ url_for('index' }}" class="link-text">
+    <a href="{% url 'home' %}" class="link-text">
         <p class="text-center mt-1">Take me to the homepage</p>
     </a>
 </div>
