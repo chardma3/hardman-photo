@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from .views import page_not_found_view, permission_denied_view, bad_request_view, server_error_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,6 +29,13 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('contact/', include('contact.urls')),
     path('about/', include('about.urls')),
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-handler404 = "hardman-photo.views.page_not_found_view"
+handler404 = "page_not_found_view"
+
+handler403 = "permission_denied_view"
+
+handler400 = "bad_request_view"
+
+handler500 = "server_error_view"
