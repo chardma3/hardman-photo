@@ -36,3 +36,5 @@ handler404 = "hardman-photo.views.page_not_found_view"
 handler403 = "hardman-photo.views.permission_denied_view"
 
 handler400 = "hardman-photo.views.bad_request_view"
+
+handler500 = "hardman-photo.views.server_error_view"
