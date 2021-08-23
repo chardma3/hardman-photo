@@ -1,17 +1,17 @@
 {% extends "base.html" %}
 {% load static %}
-{% block content %}
+{% block extra_title %}| 404 {% endblock %}
 
-<div>
-    <div class="row py-5">
-        <div class="col">
-    <h1 class="text-center mt-4">OH NO!</h1>
-    <h2 class="logo-font">Error 404</h2>
-    <p class="text-center mt-1">The page you were looking for can't be found!</p>
-    <a href="{% url 'home' %}" class="link-text">
-        <p class="text-center mt-1">Take me to the homepage</p>
-    </a>
-</div>
+{% block content %}
+<div class="row py-5">
+    <div class="col text-center">
+        <h1 class="text-center mt-4">OH NO!</h1>
+        <h2 class="logo-font">Error 404</h2>
+        <p class="text-center mt-1">The page you were looking for can't be found!</p>
+        <a href="{% url 'home' %}" class="link-text">
+            <p class="text-center mt-1">Take me to the homepage</p>
+        </a>
+    </div>
 </div>
 </div>
 
