@@ -170,8 +170,8 @@ input[name='q']::placeholder {
 }
 
 .about-image {
-   padding:15px;
-   border:2px solid var(--color-brown);
+    width: 100%;
+    padding:15px;
 }
 
 /* ------------------------------- bootstrap toasts */
