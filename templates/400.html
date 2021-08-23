@@ -1,17 +1,23 @@
 {% extends "base.html" %}
 {% load static %}
-{% block content %}
 
-<div>
-    <div class="row py-5">
-    <div class="col">
-    <h1 class="text-center mt-4">OH NO!</h1>
-    <h2 class="logo-font">Error 400</h2>
-    <p class="text-center mt-1">Sorry, your request resulted in an error!</p>
-    <a href="{% url 'home' %}" class="link-text">
-        <p class="text-center mt-1">Take me to the homepage</p>
-    </a>
+{% block page_header %}
+<div class="container header-container mt-5">
+    <div class="row">
+        <div class="col"></div>
+    </div>
 </div>
+{% endblock %}
+
+{% block content %}
+<div class="row py-5">
+    <div class="col text-center">
+        <h2 class="logo-font text-white">Error 400</h2>
+        <p class="text-center mt-1 text-white">Sorry, your request resulted in an error!</p>
+        <a href="{% url 'home' %}" class="text-white">
+            <p class="text-center mt-1 fst-italic">Take me to the homepage</p>
+        </a>
+    </div>
 </div>
 </div>
 
