@@ -110,17 +110,7 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-/*--------------------------------- Form 
-
-.form-container {
-    margin-top: 80px;
-}
-
-.form-header {
-    margin-top: 20px;
-    text-align: center;
-}
-------*/
+/*--------------------------------- Form ------*/
 .contact-form-group {
     max-width: 70%;
 }
