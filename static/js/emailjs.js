@@ -1,7 +1,7 @@
 window.onload = function () {
     document.getElementById('hp_contact_template').addEventListener('submit', function (event) {
         event.preventDefault();
-        const form = document.getElementById('bs');
+        const form = document.getElementById('hp');
         emailjs.sendForm('hp_id', 'hp', this)
             .then(function () {
                 console.log('SUCCESS!');
