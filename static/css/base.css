@@ -113,24 +113,12 @@ input[name='q']::placeholder {
 /*------ Contact page ------*/
 
 
-.about-container {
-    margin-top: 100px;
-}
-
-.about-heading {
-    text-align:center;
-}
-
 .responsive {
     max-width:100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 10px;
-}
-
-.about-text {
-    padding-top: 15px;
 }
 
 /* Form */
@@ -171,7 +159,6 @@ input[name='q']::placeholder {
 
 .about-image {
     width: 100%;
-    padding:15px;
 }
 
 /* ------------------------------- bootstrap toasts */
