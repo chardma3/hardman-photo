@@ -6,7 +6,7 @@
 HARDMAN PHOTO is a Photography webshop with award winning photographs and limited edition prints. The store's collection ranges from portraits to urban landscapes as well as stunning collages. The application allows users to browse the different collctions as well as all photos at once.
 
 
-![homepage](readme/images/hero-image.png)
+![homepage](readme/images/hero_image.png)
 
 The live website can be found [here](https://hardman-photo.herokuapp.com/)
 
