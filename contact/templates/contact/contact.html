@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block content %}
-<!--- Header --->
+<!-- Header -->
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt-3 mb-1">
@@ -18,7 +18,7 @@
         </div>
     </div>
     <!-- Contact form -->
-    <section id="contact" class="container-fluid form-container">
+    <div id="contact" class="container-fluid form-container">
         <div class="row">
             <div class="col-12 form-header" id="contact-button">
             </div>
@@ -27,10 +27,9 @@
             <div class="row">
                 <div class="col">
                     <form id="hp">
-                        <input type="text" class="form-control" id="name" placeholder="Name" required />
-                        <input type="email" class="form-control" id="emailaddress" placeholder="Email" required />
-                        <textarea rows="5" class="form-control" id="message" placeholder="Message" name="message"
-                            required></textarea>
+                        <input type="text" class="form-control" id="name" placeholder="Name" minlength="2" maxlength="30" required />
+                        <input type="email" class="form-control" id="emailaddress" placeholder="Email" minlength="5" maxlength="50" required />
+                        <textarea rows="5" class="form-control" id="message" placeholder="Message" name="message" minlength="5" maxlength="1000" required></textarea>
                         <div class="row text-center">
                             <div class="col form-button">
                                 <button type="submit" class="btn btn-black">Send!</button>
@@ -40,7 +39,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- /.contact form-->
 </div>
 {% endblock %}
