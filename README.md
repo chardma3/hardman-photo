@@ -99,7 +99,7 @@ As Django works with SQL databases by default, I was using SQLite in development
 
 ### Entity Relationship Diagram Model (ER Diagram)
 
-![ER Diagram](readme_img/er_diagram.png)
+![ER Diagram](readme/images/er_diagram.png)
 
 ### User Model
 
