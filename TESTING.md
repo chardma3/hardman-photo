@@ -56,13 +56,13 @@
     - Social media icons are in the footer where visitors can click on. The social media icons are Pinterest, Facebook and Instagram. 
     - **Result:** Test passed: all social media icons are visible for any device and the links lead to the social media websites.
 
-5. As a visitor, I want to know more about the company, so I know what the company is about.
+4. As a visitor, I want to know more about the company, so I know what the company is about.
 
     **Testing**
     - There is an about page with information about the company and the photographer.
     - **Result:** Test passed. The page contains company information and information about the photographer.
 
-6. As a visitor, I want to be able to contact the owners of the website, so I can easily ask a question or make a comment. 
+5. As a visitor, I want to be able to contact the owners of the website, so I can easily ask a question or make a comment. 
 
     **Testing**
     - A link to the contact page can be found in the navbar of the website. 
@@ -70,21 +70,21 @@
     - In the footer, available on all pages, users can find the email address to contact the company. 
     - **Result:** Test passed. Visitors can fill in the form with any questions or can contact the company through email.
 
-7. As a visitor, I want to see an overview of all the photos, so I can see what the website is offering.
+6. As a visitor, I want to see an overview of all the photos, so I can see what the website is offering.
 
     **Testing** 
     - The 'all photos' page gives an overview of all photos available to purchase on the site.
     - The page shows a back to top button in case the website has a lot of products and the visitor has scrolled down a lot.
     - **Result** Test passed. All photos are on the products page, the back to top button works and the category links are showing the right results.
 
-8. As a visitor, I want to be able to search and filter through the photos, so I can find specific photos quickly and easyily.
+7. As a visitor, I want to be able to search and filter through the photos, so I can find specific photos quickly and easyily.
     
     **Testing**
     - Visitors can sort the products based on price from low to high or from high to low. 
     - Visitors can sort the products based on alphabet or category from A - Z or Z - A.
     - **Results:** Test passed. The sort functionality is working on the all photos page and in the category sections.
 
-9. As a visitor, I want to be able to read more information about the photos (name, price, sizes available, category, image), so the user can see more detailed info about the photograph. 
+8. As a visitor, I want to be able to read more information about the photos (name, price, sizes available, category, image), so the user can see more detailed info about the photograph. 
 
     **Testing**
     - Visitors can visit the product detail page by clicking on the image of the product. 
@@ -96,7 +96,7 @@
 
 ### 1.2 Consumer goals 
 
-10. As a consumer, I want to add photos to my basket, so I can purchase them. 
+9. As a consumer, I want to add photos to my basket, so I can purchase them. 
 
     **Testing**
     - The consumer can choose the quantity of the product and can add the product to the basket by clicking on the add to bag button. 
@@ -107,27 +107,27 @@
     - The amount in the navbar changes to the total price of the shopping bag.
     - **Result:** Test passed. All functionalities of the toast message, add to bag and quantity are working as expected. 
 
-11. As a consumer, I want to modify my order, so I can make adjustments before I place my order.
+10. As a consumer, I want to modify my order, so I can make adjustments before I place my order.
     
     **Testing**
     - The consumer can modify the quantity of the order on the shoppingbag. The consumer can do this by changing the quantity and by clicking update.
     - **Result:** Test passed. The quantity updates when the consumer sets another quantity and clicks on update.
 
-12. As a consumer, I want to be able to delete products in my order, so I can remove products that I no longer wish to purchase. 
+11. As a consumer, I want to be able to delete products in my order, so I can remove products that I no longer wish to purchase. 
 
     **Testing**
     - The consumer can delete the product in the shopping bag by clicking on remove. 
     - **Result:** Test passed. The product is deleted when a consumer clicks on remove.
 
-13. As a consumer, I want to see the total price and shipping costs of my order, so I can see how much I have spent in total. 
+12. As a consumer, I want to see the total price and shipping costs of my order, so I can see how much I have spent in total. 
 
-    *Testing**
+    **Testing**
     - The consumer sees the price, shipping costs and the total price of the order. 
     - Free delivery is provided at 40€ or highter. The delivery costs are otherwise 10% of the order. 
     - The total price is automatically deducted from the product price and any shipping costs.
     - **Results:** The product price, shipping costs and total price are automatically calculated and are correct.
 
-14. As a consumer, I want to pay with a card in a safe and secure way, so I know that my payment goes through and my information is stored safely. 
+13. As a consumer, I want to pay with a card in a safe and secure way, so I know that my payment goes through and my information is stored safely. 
 
     **Testing**
     - Consumers can pay with credit card and the payment goes via Stripe payments. 
@@ -140,7 +140,7 @@
     - **Result:** Test pass. The Stripe payments are working fine. And the checkout form is valid. 
 
 
-15. As a consumer, I want to create an account, so I can see my profile details and order history. 
+14. As a consumer, I want to create an account, so I can see my profile details and order history. 
 
     **Testing**
     - A consumer can create an account by signing up. 
@@ -152,14 +152,14 @@
 
 ### 1.3 Returning consumer goals 
 
-19. As a returning consumer, I want to login and logout of my account anytime, so I can make an order quickly and so I can see my order history. 
+15. As a returning consumer, I want to login and logout of my account anytime, so I can make an order quickly and so I can see my order history. 
 
     **Testing**
     - The returning consumer can login and logout through the links dropdown menu of the profile icon in the navbar. 
     - The consumer has a double check for logging out.
     - **Result:** Test passed. The consumer can login and logout easily. 
 
-20. As a returning consumer, I want to reset/change my password (if I forgot it), so I can get access to my profile. 
+16. As a returning consumer, I want to reset/change my password (if I forgot it), so I can get access to my profile. 
 
     **Testing**
     - The password can be changed by clicking the button on the profile page or by the login page. 
@@ -169,7 +169,7 @@
 
 ### 1.4 Admin goals
 
-23. As admin, I want to add, modify and delete products, so I can manage the assortment of all products on the website. 
+17. As admin, I want to add, modify and delete products, so I can manage the assortment of all products on the website. 
 
     **Testing**
     - The admin can add a product by clicking on the profile icon and add product. The admin gets a form to fill in and can add a product to the website. 
@@ -182,31 +182,34 @@
 
 ## 1. Automated testing
 
+### Testing apps
+Automated testing is used to support the manual testing. The manual testing helped by testing the back-end code with views and due to time constraints only them.
+
 ### Lighthouse testing
 
-I used the automated tool Lighthouse to test the quality of the web pages. 
+I used the automated tool Lighthouse from Chrome to test the quality of the web pages. 
 
 **The result:** 
-![Lighthouse testing](readme_img/lighthouse-testing.png)
+![Lighthouse testing](readme/images/lighthouse_testing.png)
 
 <span id="validators"></span>
 
 ## 2. Validators
 
- - **[HTML Validator](https://validator.w3.org/):** No big errors to show.
+ - **[HTML Validator](https://validator.w3.org/):** No major errors to show.
     - I tested the HTML code by running my server locally and used view page source. This code I passed through the validator.
 
     **The following errors/warnings are showing**
-    - Error Stray start tag tr, th and td: This error point to the newsletter form. The tr, th and td are automatically placed in the code from the `{{ form }}`.
-    - Error Diplicate attribute name: This error point to the newsletter form. The name is double and is automatically set by `{{ form }}`.
+    - There were errors saying that only an <li> element may be the direct child of a <ul> element. This is true of all pages I checked.
+    - Error Duplicate ID: This error comes from the mobile navbar and desktop navbar.
     - Warning: the type attribute is unnecessary for JavaScript resource.
 
-    **Result:** De rest of the code passed and there where no errors.
+    **Result:** The rest of the code passed and there where no errors.
 
-- **[CSS Validator](https://jigsaw.w3.org/css-validator/):** No big errors found.
+- **[CSS Validator](https://jigsaw.w3.org/css-validator/):** No major errors found.
 
     **Results:**
-    - base.css: 1 error was found: .btt-button: invalid number: padding-right. The input for padding-right is: `calc(var(--bs-gutter-x)/ 2)`. I think this error occurs because I used the calc method.
+    - Unkown vendor extensions
     - checkout.css: no errors found
     - profiles.css: no errors found
 
@@ -216,8 +219,7 @@ I used the automated tool Lighthouse to test the quality of the web pages.
     **Results:**
     - Warnings 
         - 'template literal syntax' is only available in ES6 (use 'esversion: 6')
-        - 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-    - Undefined variable: $
+    - Undefined variables: $
 
 - **[Python validator | PEP8](http://pep8online.com/):** No errors found
 
@@ -227,7 +229,7 @@ I used the automated tool Lighthouse to test the quality of the web pages.
 
 <span id="responsiveness"></span>
 
-## 4. Responsiveness 
+## 3. Responsiveness 
 - Responsiveness of the site is tested with [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) and [Responsive Design Checker](https://www.responsivedesignchecker.com/).
 - This site was was tested on multiple browsers (Google Chrome, Mozzila Firefox and Opera), multiple mobile devices (Samsung Galaxy, Huawei, Sony) and tablet devices(Samsung Galaxy Tab) and showed responsivness and compatibility.
 
@@ -327,50 +329,35 @@ I used the automated tool Lighthouse to test the quality of the web pages.
 | :-------------: |:----------------:| :--------------: | :---------: |
 | Clicking on `log Out` button | Logs out user and redirects to index page | As expected | Pass |
 
-![Responsiveness testing](readme_img/responsiveness_part1.png)
-![Responsiveness testing  ](readme_img/responsiveness_part2.png)
-
 ---
-
-<span id="browser-compatibility"></span>
-
-## 5. Browser compatibility
-![Browser compatibility](readme_img/browser-compatibility.png)
-
---- 
-
-<span id="other"></span>
-
-## 8. Other
-
-- During developing the website the debugger in `settings.py` was set to `debug=True`. The **debugger** showed errors and allowed me to find the errors quickly and to fix it.
-- Custom error pages for error 400, 403, 404 and 500 are showing up in the same design as the website. 
-- Url access/ security is test. The results: 
-    - Pages that not exists are headed to a 404 page. 
-    - Users who visit pages that require login while the user is not logged in will be directed to the login page.
-    - Users who want to visit superuser access pages are getting redirected to the login page.
-
---- 
 
 <span id="bugs"></span>
 
-## 7. Bugs 
+## 4. Bugs Fixed
 
-1. A bug was found in the interactive elements of the website. Certain elements didn't works especially collapse and dropdown elements.
-    - I checked the links of Bootstrap and found out that I was using two versions of Bootstrap (Version 4 and version 5) at the same time. That why some elements didn't interact on the website. I fixed this bug to change every element to Bootstrap 5. 
-2. A bug was found in with a unexpected 404 message on the products page in my 8000 port. 
-    - This problem sometimes occurs when I added a product to the cart and then delete the product from the database. This action causes my 404 error. I have solved this bug by opening the Dev Tools and cleaned the site data. 
+1. Upon first submission the correct database was not connected - This was fixed by adding an env.py file. I've spoken to a couple of tutors how this could've happened but it's still unclear as to why I tested the website all day whilst writing the testing readme and then 5 min before submission it reverted to a db that I had deleted. The workspace was always pinned but the env.py file was not there. Upon adding that it worked as expected. 
+
+2. Custom error pages weren't working because of typos. I fixed these and added formatting and extra styling. I was able to trigger the 404 page by typing an unknown address appnded to the regular heroku url.
+
+3. When filling in details for payment there was a spinning icon in bottom left corner and the form did not go through. Checkout.css was not connected. I seem to have deleted the the checkout.css url. Upon adding the block css it worked as expected.
+
+## 4. Bugs Unresolved
+
+1. The product input field in the shopping bag app should only be allowed to go to 0. However due to time constraints I was unable to find a way to fix this. 
+
+2. The email order confirmation is not being sent. Due to time constraints I was unable to fix this.
+
+3. In the profile page and order history page the item name has the word 'size' after the 'name'. For some reason it is not showing the exact size that was selected. Due to time constraints I was unable to fix this.
+
+4. My mentor Precious pointed out that upon entering a decimal number in the input field the app crashes. Due to time constraints I was unable to fix this.
 
 ---
 
 <span id="future-testing"></span>
 
-## 8. Future testing 
+## 5. Future testing 
 
-Testing is a big part that has to be done after you created the project. For in the future with more time and knowlegde I would like to impove testing and make the quality of the project better. 
-For in the future I would like to improve mostrly two things: 
-- I would like to improve the automated testing with testing the apps looking at `views`, `models`, and `forms'. My coverage at this moment is 41% and I would like to impove this to a minimum of 80%.
-- I would like to improve the results of the lighthouse scores, especially the performance score. The performance score is 66 and I would like to improve that to a minimum score of 90. Therefore I have to dive into the requirements and improve these elements.
+Testing is obviously a massive part of developing a web application. Some argue that as much time should be spent testing the application as should be devloping the application. In the future, with more time and knowlegde I would like to improve the testing and resolve the bugs that are still present.
 
 ---
 
