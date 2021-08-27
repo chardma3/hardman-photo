@@ -13,7 +13,6 @@ The live website can be found [here](https://hardman-photo.herokuapp.com/)
 ## Table of Contents
 
 * [Project Summary](#project-summary)
-* [User Experience Design (UX)](#user-experience-design)
   * [The Strategy Plane](#the-strategy-plane)
     * [User Stories](#user-stories) 
   * [The Scope Plane](#the-scope-plane)
@@ -37,8 +36,8 @@ The live website can be found [here](https://hardman-photo.herokuapp.com/)
 
 Welcome to my Full Stack Frameworks with Django Project for Code Institute.
 
-The goal of this project was to allow the user to create an account and make a purchase of products with Stripe. Although the majority of the admin activities is done through the Django admin site, the web app also provides more pleasant environment for common tasks such as adding, editing and deleting products or blog posts through the web app's UI.
-I have developed this ecommerce shopping website with Django which is powerful and flexible. The Django and Stripe frameworks have been used to take care of sensitive customer information in a secure manner.
+The goal of this project is to allow users to create an account and to purchase products with the secure Stripe payment system. Although the majority of the admin activities is done through the Django admin site, the web app also provides a more pleasant environment for common tasks such as adding, editing and deleting products through the web app's UI.
+I have developed this e-commerce shopping website with Django which is a powerful and flexible framework. These Django and Stripe frameworks have been used to take care of sensitive customer information in a secure manner.
 
 ## The Strategy Plane
 
@@ -54,7 +53,7 @@ As an e-commerce site owner...
 
 As a customer...
 
-* I want a líst of photos so that I can select a photo to purchase.
+* I want a list of photos so that I can select a photo to purchase.
 * I want to view a specific category of products so that I can quickly find photos that I'm interested in without having to search through all photos.
 * I want to view photo details so that I can view the sizes available and choose the quantity I would like to purchase.
 * I want to easily view the the total amount of my shopping bag to know how much I am spending.
@@ -66,7 +65,7 @@ As a customer...
 
 ## The Scope Plane 
 
-When designing the page, I wanted the user to have a positive experience aka intuitive, easy and visually appealing. The user can navigate the website using the navigation bar that is always visible. The user can navigate to different sections easily and intuitively.
+Whilst designing the page, I wanted the user to have a positive experience aka intuitive, easy and visually appealing. The user can navigate the website using the navigation bar that is always visible. The user can navigate to different sections easily and intuitively.
 
 ### Features planned:
 
@@ -103,7 +102,7 @@ As Django works with SQL databases by default, I was using SQLite in development
 
 ### User Model
 
-The User model utilized for this project is the standard one provided by `django.contrib.auth.models`
+The user model utilized for this project is the standard one provided by `django.contrib.auth.models`
 
 ### Profiles App
 
@@ -171,7 +170,7 @@ Django allauth was used to set up user registration and built in decorators allo
 
 ### Colour Scheme
 
-As is the case with photography stores, both online and physically, photography galleries and museums black and white is the driving color scheme. The stark contrast of light and dark are the very basis of photography and this color simplicity allows the photography on display to shine.
+As is the case with photography stores, both online and physically, photography galleries and museums, black and white is the driving color scheme. The stark contrast of light and dark are the very basis of photography and this color simplicity allows the photography on display to shine.
 
 ### Typography
 
@@ -202,7 +201,7 @@ Web App Sections:
     * Available to registered/logged in users with the purpose of tracking their order history and safely storing shipping details for a secure and easy checkout.
 
 * Admin account
-    * Users with admin rights have access to orders, user profiles, as well as product and blog inventory. The majority of the information is stored in the Django admin site but the admin users may also do common tasks such as adding, editing and deleting products via the site.
+    * Users with admin rights have access to orders, user profiles as well as product inventory. The majority of the information is stored in the Django admin site but the admin users may also do common tasks such as adding, editing and deleting products via the apps UI.
 
 ## Future Features
 
@@ -253,7 +252,7 @@ The following list of features is structured in a way that should help with unde
 ### Automatic e-mails
 
 * An account is working for this project and used as a sender for all verification, reset and confirmation e-mails.
-* For example, users receive an order confirmation e-mail after a purchase, account verification e-mail after the registration, password reset e-mail after requesting a password reset, etc.
+* For example, users are meant to receive an order confirmation e-mail after a purchase, account verification e-mail after the registration, password reset e-mail after requesting a password reset, etc.
 
 ### Home app
 
@@ -268,8 +267,8 @@ The following list of features is structured in a way that should help with unde
 * `products` Django app is where all the logic and templates connected to individual products are.
 * It can be divided into three main sections: **shop**, **product pages** and **admin product management activities**.
 * **Shop** is the landing page where shoppers start. Here they have access to the nav bar with all categories, a search bar and a buy now button which takes them to all photos where they can browse through all photography avaible on the website. This also features a sort function via the sort dropdown where they can sort by price, name and category.
-* By clicking on a product, the user can see the full product info including pictures of product, name, price and an add button if they would like to add product.
-* **Admin product management** activities include adding, editing and deleting products. Users with admin rights can do that directly in the UI through forms.
+* By clicking on a product, the user can see the full product info including pictures of product, name, price and an add button if they would like to add the product to their shoppig bag.
+* **Admin product management** activities include adding, editing and deleting products. Users with admin rights can do this directly in the UI through forms.
 
 ### Bag app
 
@@ -305,7 +304,7 @@ The following list of features is structured in a way that should help with unde
 
 # Technologies
 
-The website is designed using following technologies:
+The website is designed using the following technologies:
 
 #### Languages used
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
