@@ -197,10 +197,10 @@ I used the automated tool Lighthouse from Chrome to test the quality of the web 
 ## 2. Validators
 
  - **[HTML Validator](https://validator.w3.org/):** No major errors to show.
-    - I tested the HTML code by running my server locally and used view page source. This code I passed through the validator.
+    - I tested the HTML code by running it throgh the validator mentioned above.
 
     **The following errors/warnings are showing**
-    - There were errors saying that only an <li> element may be the direct child of a <ul> element. This is true of all pages I checked.
+    - There were errors saying that only an 'li' element may be the direct child of a 'ul' element. This is true of all pages I checked.
     - Error Duplicate ID: This error comes from the mobile navbar and desktop navbar.
     - Warning: the type attribute is unnecessary for JavaScript resource.
 
@@ -232,6 +232,7 @@ I used the automated tool Lighthouse from Chrome to test the quality of the web 
 ## 3. Responsiveness 
 - Responsiveness of the site is tested with [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) and [Responsive Design Checker](https://www.responsivedesignchecker.com/).
 - This site was was tested on multiple browsers (Google Chrome, Mozzila Firefox and Opera), multiple mobile devices (Samsung Galaxy, Huawei, Sony) and tablet devices(Samsung Galaxy Tab) and showed responsivness and compatibility.
+
 
 | Functionality | Expected Outcome | Actual Outcome | Pass/Fail |
 | :-------------: |:----------------:| :--------------: | :---------: |
@@ -339,7 +340,7 @@ I used the automated tool Lighthouse from Chrome to test the quality of the web 
 
 2. Custom error pages weren't working because of typos. I fixed these and added formatting and extra styling. I was able to trigger the 404 page by typing an unknown address appnded to the regular heroku url.
 
-3. When filling in details for payment there was a spinning icon in bottom left corner and the form did not go through. Checkout.css was not connected. I seem to have deleted the the checkout.css url. Upon adding the block css it worked as expected.
+3. When filling in details for payment there was a spinning icon in the bottom left corner and the form did not go through. Checkout.css was not connected. The checkout.css url was missing. Upon adding the block css it worked as expected.
 
 ## 4. Bugs Unresolved
 
