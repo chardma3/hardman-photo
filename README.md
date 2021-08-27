@@ -29,9 +29,6 @@ The live website can be found [here](https://hardman-photo.herokuapp.com/)
 * [Technologies](#technologies)
 * [Testing](#testing)
 * [Deployment](#deployment)
-    * [AWS S3](#aws-s3)
-    * [Heroku Deployment](#heroku)
-    * [Local Deployment](#local-deployment)
 * [Credits](#credits)
 
 ****
@@ -99,6 +96,10 @@ Wireframes for this project may be viewed in a seperate file [here](wireframes.m
 ### Database Design
 
 As Django works with SQL databases by default, I was using SQLite in development. Heroku, however, provides a PostgreSQL database for deployment
+
+### Entity Relationship Diagram Model (ER Diagram)
+
+![ER Diagram](readme_img/er_diagram.png)
 
 ### User Model
 
@@ -306,121 +307,189 @@ The following list of features is structured in a way that should help with unde
 
 The website is designed using following technologies:
 
-## Programming languages
+#### Languages used
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+    - HTML5 provides the structure and the content for my project. 
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+    - CSS3 provides the style of the HTML5 elements.
+- [JavaScript](https://nl.wikipedia.org/wiki/JavaScript)
+    - JavaScript provides the interactive elements on the website. 
+- [jQuery](https://jquery.com/)
+    - jQuery is used for implementation of Bootstrap.
+- [Python](https://www.python.org/)
+    - Python provides the backend of the project.
+- [Jinja](https://en.wikipedia.org/wiki/Jinja_(template_engine))
+    - Jinja provides the templating language for Python.
 
-* HTML - the project used HTML to define structure and layout of the web page;
-* CSS - the project used CSS stylesheets to specify style of the web document elements;
-* JavaScript - the project used JavaScript to implement Stripe, EmailJS and custom Javascript.
-* Python - the project back-end functions are written using Python.
+#### Frameworks, libraries & other
+- [Django](https://www.djangoproject.com/) 
+    - The GitPod is used as Python framework for the project.
+- [Gitpod](https://www.gitpod.io/) 
+    - The GitPod is used to develop the project.
+- [Git](https://git-scm.com/)
+    - The Git was used for version control to commit to Git and push to GitHub.
+- [GitHub](https://github.com/)
+    - The GitHub is used to host the project.
+- [Pip3](https://pip.pypa.io/en/stable/)
+    - Pip3 is used for installing the necessary tools, libraries and frameworks.
+- [Heroku](https://heroku.com/)
+    - Heroku is used to host the project.
+- [AWS Amazon](https://aws.amazon.com/)
+    - AWS Amazon is used to store static and media files.
+- [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
+    - Boto3 is used for compatibility in AWS.
+- [Gunicorn](https://pypi.org/project/gunicorn/)
+    - Gunicorn is used to enable deployment to Heroku.
+- [Spycopg2](https://pypi.org/project/gunicorn/)
+    - Spycopg2 is used to enable the PostGreSQL database to connect with Django.
+- [Google Fonts](https://fonts.google.com/)
+    - Google Fonts is used to provide the font roboto for all the text that is used in the project. 
+- [Balsamiq](https://www.balsamiq.com/)
+    - Balsamiq is used to create the wireframes for the project.
+- [Bootstrap](https://getbootstrap.com/)
+    - Bootstrap is used for the design framework.
+- [Heroku](https://dashboard.heroku.com/)
+    - Heroki is the cloud platform to deploying the app.
+- [Django Crispy Forms ](https://django-crispy-forms.readthedocs.io/en/latest/)
+    - Django Crispy Forms is used to style the Django forms
+- [Stripe](https://stripe.com/en-nl)
+    - Stripe is used for the secure payments
+- [EmailJS](https://www.emailjs.com/) 
+    – Service that helps sending emails using client side technologies only. 
 
-## Libraries
+#### Databases 
+- [SQlite3](https://www.sqlite.org/index.html)
+    - SQlite3 is used as the development database.
+- [PostgreSQL](https://www.postgresql.org/)
+    - PostgreSQL is used as the production database.
 
-* [Font Awesome](https://fontawesome.com/v4.7.0/) - Font Awesome icons were used throughout the web-site.
-* [jQuery](https://jquery.com/) - is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation.
-
-## Frameworks & Extensions
-
-* [Django](https://www.djangoproject.com/) – Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
-* [Bootstrap](https://getbootstrap.com/) – Bootstrap is a web framework that focuses on simplifying the development of informative web pages.
-* [EmailJS](https://www.emailjs.com/) – Service that helps sending emails using client side technologies only. It only requires to connect EmailJS to one of the supported email services, create an email template, and use their Javascript library to trigger an email.
-* [Stripe](https://stripe.com/ie) – Allows individuals and businesses to make and receive payments over the Internet.
-
-## Database
-* [Heroku Postgres](https://www.heroku.com/postgres/) – PostgreSQL is one of the world's most popular relational database management systems.
-
-## Others
-
-* [GitHub](https://github.com/) - GitHub is a global company that provides hosting for software development version control using Git.
-* [Gitpod](https://gitpod.io/workspaces/) - One-click ready-to-code development environments for GitHub.
-* [Heroku](https://dashboard.heroku.com/) - Heroku is a cloud platform that lets companies build, deliver, monitor and scale apps.
-* [AWS-S3](https://aws.amazon.com/s3/) – Object storage service that offers industry-leading scalability, data availability, security, and performance.
+#### Testing tools used 
+- [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/open) is used to detect problems and test responsiveness.
+- [Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse)
+    - Open source automated tool that audits webpages for performance, accessibility, progressive web apps, SEO and more. 
+- [W3C Markup Validation Service](https://validator.w3.org/)
+    - The W3C Markup Validation Service is used to check whether there were any errors in the HTML5 code. 
+- [W3C CSS validator](https://jigsaw.w3.org/css-validator/)
+    - The W3C CSS validator is used to check whether there were any errors in the CSS3 code.
+- [JShint](https://jshint.com/)
+    - JShint is a JavaScript validator that is used to check whether there were any errors in the JavaScript code. 
+- [PEP8](http://pep8online.com/)
+    - The PEP8 validator is used to check whether there were any errors in the Python code.
 
 # Testing
 
 **Testing section is located [here](testing.md)**
 
-### Validating code
-
-* HTML
-code is validated through [W3 validator](https://validator.w3.org/).
-
-* CSS
-code is validated through [W3 Jigsaw](https://jigsaw.w3.org/css-validator/).
-
-* JavaScript
-code is validated through [JS Hint](https://jshint.com/).
-
-* Python
-code is validated through [PEP8](http://pep8online.com/).
-
-
 # Deployment
 
-## AWS S3
-Created a new Amazon account and connect to amazon service AWS3 account are cloud based serve where the project media and staicfiles will be stored unto. At first, we locate S3 on amazon service then we create a bucket. While creating the bucket on S3, the note that public access must be all switched off to allow access for users.
+#### Requirements 
+- Python3 
+- Github account 
+- Heroku account
+- An IDE of choice 
+- Stripe account
+- AWS Amazon account
+- Gmail account
 
-Once we've created the bucket, we now can now click on it's properties and enable the Static Website Hosting option, so it can serve the purpose of hosting our static files, you will need to imput an index.html and error.html before saving. Then we go into the created bucket Permissions and click into CORS configuration, this part already have a prefilled default config, All that is needed is just to write the default code and save the config.
+#### Clone the project 
+To make a local clone, follow the following steps. 
+1. Log in to GitHub and go to the repository. 
+2. Click on the green button with the text **“Code”.**
+3. Click on **“Open with GitHub Desktop”** and follow the prompts in the GitHub Desktop Application or follow the instructions from **[this link](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop)** to see how to clone the repository in other ways. 
 
-Then we go into the bucket policy to allows access to the contents across all web and inside this we will put in here some code including arn address displayed at the top of the heading. Then we go into amazon IAM to allow identity and access management of our stored files and folder. In the IAM service, we add a new group for our application and then we set the policies to ALL Then it generates a downlaodable zip file containing ID and KEY for us to use for the newly added group. This ID and KEY as to be stored in an environment variable.
+#### Working with the local copy
+1. Install all the requirements: Go to the workspace of your local copy. In the terminal window of your IDE type: **pip3 install -r requirements.txt**.
+2. Set up the environment variables: 
+    - Create a `.gitignore` file in the root directory of the project. 
+    - Create a `.env` file. This will contain the following environment variables:
 
-This then allows us to into our terminal window and install some settings Boto3 Django Storages
+    ```
+    Import os
+    os.environ("SECRET_KEY", "Added by developer")
+    os.environ("STRIPE_PUBLIC_KEY", "Added by developer")
+    os.environ("STRIPE_SECRET_KEY", "Added by developer")
+    os.environ("STRIPE_WH_SECRET", "Added by developer")
+    os.environ("MAILCHIMP_API_KEY", "Added by developer")
+    os.environ("MAILCHIMP_DATA_CENTER", "Added by developer")
+    os.environ("MAILCHIMP_EMAIL_LIST_ID", "Added by developer")
+    ```
+    - Add the `.env` file to the `.gitignore` file.
+    **NOTE:** See more in the [Stripe Documentation](https://stripe.com/docs/keys) to read more about setting the API key.
+3. Migrate the models to create the database by the following commands:
+    - `python3 manage.py makemigrations`
+    - `python3 manage.py migrate`
+4. Load the data fixtures for categories and product in this exact order:
+    - `python3 manage.py loaddata categories`
+    - `python3 manage.py loaddata products`
+5. Create a superuser. The superuser has acces to the admin environment.
+    - `python3 manage.py createsuperuser`
+    - Enter your username, email and password.
+6. Run the app: Open your terminal window in your IDE. Type: `python3 manage.py runserver` and run the app.
+7. To acces the admin environment, you can add `/admin` at the end of your url and login with the superuser.
 
-The Django Storages is passed into the installed apps in settings and also a custom_storage file is created to store credentials in environment variable. And once everything looks fine we can run python3 manage.py collectstatic. This will collect all the static files in our app including any changes that is made. N.B this command has to be run in the development(local) environment each time a change is been made in the static files/folder And your folder and files should display in your AWS S3 BUCKETS
 
-## Heroku Deployment 
+#### Heroku Deployment  
+1. Set up local workspace for Heroku 
+    - In terminal window of your IDE type: `pip3 freeze -- local > requirements.txt.` (The file is needed for Heroku to know which filed to install.)
+    - Create a Procfile with the following text: `web: gunicorn <name app>.wsgi:application` (The file is needed for Heroku to know which file is needed as entry point.)
+    - Push all these files to your GitHub reposity.
+2. Set up Heroku
+    - Create a Heroku account and create a new app and select your region. 
+    - Go to resources in Heroku and search for **postgess**. Select **Hobby dev - Free** and click on the provision button to add it to the project.
+    - Go to the settings app in Heroku and go to **Config Vars**. Click on **Reveal Config Vars** and add the following config variables:
 
-#### Create application:
+    | KEY            | VALUE         |
+    |----------------|---------------|
+    | AWS_ACCESS_KEY_ID | `<aws access key>`  |
+    | AWS_SECRET_ACCESS_KEY | `<aws secret access key>`  |
+    | DATABASE_URL| `<postgres database url>`  |
+    | EMAIL_HOST_PASS | `<email password(generated by Gmail)>` |
+    | EMAIL_HOST_USER| `<email address>`  |
+    | MAILCHIMP_API_KEY| `<api key>`  |
+    | MAILCHIMP_DATA_CENTER| `<datacenter id>`  |
+    | MAILCHIMP_EMAIL_LIST_ID| `<emailist id>`  |
+    | SECRET_KEY | `<your secret key>`  |
+    | STRIPE_PUBLIC_KEY| `<your stripe public key>`  |
+    | STRIPE_SECRET_KEY| `<your stripe secret key>`  |
+    | STRIPE_WH_SECRET| `<your stripe wh key>`  |
+    | USE_AWS | `True`  |
 
-1. Navigate to Heroku.com and login.
-2. Click on the new button.
-3. Select create new app.
-4. Enter the app name.
-5. Select region.
+3. Set up Database
+    - Copy the **DATABASE_URL** (Postgres URL) from the config variables of Heroku and past it into the default database in `setting.py`
 
-#### Set up connection to Github Repository:
+    ```
+    DATABASES = {
+        'default': dj_database_url.parse("<DATABASE_URL here>")
+    }
+    ```
+    **NOTE:** This setup for the databases is temporary for deployment to Heroku.
+    - Migrate the models to create the database by the following commands:
+        - `python3 manage.py makemigrations`
+        - `python3 manage.py migrate`
+    - Load the data fixtures for categories and product in this exact order:
+        - `python3 manage.py loaddata categories`
+        - `python3 manage.py loaddata products`
+    - Create a superuser. The superuser has acces to the admin environment.
+        - `python3 manage.py createsuperuser`
+        - Enter your username, email and password.
+    - Now you can remove the DATABASE_URL from `settings.py` and set the 'old' default DATABSE settings.
+    - Adjust the ALLOWED_HOSTS in you settings.py with the following:
+    
+    ```
+    ALLOWED_HOSTS = ['<your Heroku app URL>', 'localhost]
+    ```
+    - Push the code to Github.
+4. Connect with Heroku 
+    - Click on the **Connect to GitHub** section in the deploy tab in Heroku. 
+        - Search your repository to connect with it.
+        - When your repository appears click on **connect** to connect your repository with the Heroku. 
+    - Set automatic deploment: Go to the deploy tab in Heroku and scroll down to **Aotmatic deployments**. Click on **Enable Automatic Deploys**. By **Manual deploy** click on **Deploy Branch**.
+Heroku will receive the code from Github and host the app using the required packages. 
+Click on **Open app** in the right corner of your Heroku account. The app wil open and the live link is available from the address bar. 
 
-1. Click the deploy tab and select GitHub - Connect to GitHub.
-2. A prompt to find a github repository to connect to will then be displayed.
-3. Enter the repository name for the project and click search.
-4. Once the repo has been found, click the connect button.
-
-#### Add PostgreSQL Database:
-
-1. Click the resources tab.
-2. Under Add-ons seach for Heroku Postgres and then click on it when it appears.
-3. Select Plan name Hobby Dev - Free and then click Submit Order Form.
-
-#### Set environment variables:
-
-1. Click on the settings tab and then click reveal config vars.
-2. Variables added: 
-    * AWS_ACCESS_KEY_ID 
-    * AWS_SECRET_ACCESS_KEY 
-    * DATABASE_URL 
-    * EMAIL_HOST_PASS 
-    * EMAIL_HOST_USER
-    * SECRET_KEY 
-    * STRIPE_PRICE_ID 
-    * STRIPE_PUBLIC_KEY 
-    * STRIPE_SECRET_KEY 
-    * STRIPE_WH_SECRET 
-    * USE_AWS 
-
-#### Enable automatic deployment:
-
-1. Click the Deploy tab
-1. In the Automatic deploys section, choose the branch you want to deploy from then click Enable Automation Deploys.
-
-## Local Deployment
-
-1. Navigate to the GitHub Repository.
-2. Click the Code drop down menu.
-3. Either Download the ZIP file, unpackage locally and open with IDE (This route ends here) OR Copy Git URL from the HTTPS dialogue box.
-4. Open your developement editor of choice and open a terminal window in a directory of your choice.
-5. Use the git clone command in terminal followed by the copied git URL.
-6. A clone of the project will be created locally on your machine.
-
-Once the project has been loaded into an IDE of choice, run the following command in the shell to install all the required packages: pip install -r requirements.txt
+#### Hosting static and media files with AWS
+The static and media files are hosted in the AWS S3 Bucket. To host them you will need an account and create an S3 bucket and set a group, policy and user in the IAM environment. 
+Read more about the the S3 Bucket storage [here](https://aws.amazon.com/s3/). For more information about the storage in your project [click here](https://django-storages.readthedocs.io/en/latest/backends/amazon-S3.html).
 
 # Credits
 
@@ -437,4 +506,4 @@ Once the project has been loaded into an IDE of choice, run the following comman
 
 ## Acknowledgments
 
-* Huge thanks to the gang at Code Institute Tutor Support and student Care for all their guidance, patience and support.
+* Huge thanks to the gang at Code Institute Tutor Support, Student Care and my mentor Precious Liege for all their guidance, patience and support.
