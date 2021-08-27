@@ -3,10 +3,10 @@
 ### Code Institute - Final Milestone Project (4) - Full Stack Frameworks With Django.
 
 
-HARDMAN PHOTO is a Photography webshop with award winning photographs and limited edition prints. The store's collection ranges from portraits to urban landscapes as well as stunning collages. The application allows users to browse the different collctions as well as all photos at once.
+HARDMAN PHOTO is a Photography webshop with award winning photographs and limited edition prints. The store's collection ranges from portraits to urban landscapes as well as stunning collages. The application allows users to browse the different collections as well as all photos at once.
 
 
-![homepage](readme/images/hero_image.png)
+![homepage](readme/images/responsive_img.png)
 
 The live website can be found [here](https://hardman-photo.herokuapp.com/)
 
@@ -45,7 +45,7 @@ I have developed this ecommerce shopping website with Django which is powerful a
 
 ## The Strategy Plane
 
-HARDMAN PHOTO is a web-shop for photographer and visual artist based in Stockholm, Sweden. The customer can successfully purchase items and have them delivered to their home. Different sizes are available based on commonly used print measurements.
+HARDMAN PHOTO is a web-shop for photographer and visual artist, Claire Hardman, based in Stockholm, Sweden. The customer can successfully purchase items and have them delivered to their home. Different sizes are available based on commonly used print measurements.
 
 ## User Stories
 
