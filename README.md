@@ -378,7 +378,7 @@ The website is designed using following technologies:
 
 # Testing
 
-**Testing section is located [here](testing.md)**
+**Testing section is located [here](TESTING.md)**
 
 # Deployment
 
